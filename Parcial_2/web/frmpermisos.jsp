@@ -1,4 +1,4 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+i<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -43,7 +43,7 @@
                         <c:forEach var="item" items="${lista_roles}">
                             <option value="${item.id}" <c:if test="${permisos.id_rol== item.id}">
                                         selected
-                                    </c:if>>${item.rol}</option>
+                                    </c:if>>${item.descripcion}</option>
                         </c:forEach>
                     </select>
                 </div>                
